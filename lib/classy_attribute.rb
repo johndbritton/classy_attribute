@@ -2,6 +2,20 @@ require 'classy_attribute/version'
 
 module ClassyAttribute
 
+  include Comparable
+
+  def <=>(other)
+    return if other.class != self.class
+
+    if value < other.value
+      -1
+    elsif value == other.value
+      0
+    else value > other.value
+      1
+    end
+  end
+
   attr_accessor :value
 
   def initialize(value)
