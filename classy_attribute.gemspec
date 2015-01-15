@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = ClassyAttribute::VERSION
   spec.authors       = ["John Britton"]
   spec.email         = ["public@johndbritton.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Give your ActiveRecord attributes some class.}
+  spec.description   = %q{Provies a simple way to wrap ActiveRecord attributes with feature rich domain objects.}
+  spec.homepage      = "https://github.com/johndbritton/classy_attribute"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
